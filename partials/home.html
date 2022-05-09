@@ -1,0 +1,115 @@
+<div id="banner">
+  <h2>Alkasar Invest</h2>
+  <h3>Знайди свою нерухомість</h3>
+</div>
+
+<div class="container">
+  <p class="block-header">Актуальні пропозиції:</p>
+
+  <div class="objects">
+    <div class="object-container">
+      <img src="./img/ap1.jpg" class="object-img" />
+      <div class="object-description-container">
+        <p class="object-label">Оренда сучасної квартири</p>
+        <div class="object-price-container">
+          <p class="object-address">вул.Шевченка</p>
+          <p class="object-price">10 000 грн</p>
+        </div>
+      </div>
+    </div>
+    <div class="object-container">
+      <img src="./img/ap2.jpg" class="object-img" />
+      <div class="object-description-container">
+        <p class="object-label">2-кімнатна квартира</p>
+        <div class="object-price-container">
+          <p class="object-address">вул.Миру</p>
+          <p class="object-price">18 000 грн</p>
+        </div>
+      </div>
+    </div>
+    <div class="object-container">
+      <img src="./img/ap3.jpg" class="object-img" />
+      <div class="object-description-container">
+        <p class="object-label">Оренда 1-к квартири</p>
+        <div class="object-price-container">
+          <p class="object-address">вул.Науки</p>
+          <p class="object-price">8 500 грн</p>
+        </div>
+      </div>
+    </div>
+    <div class="object-container">
+      <img src="./img/ap4.jpg" class="object-img" />
+      <div class="object-description-container">
+        <p class="object-label">Сучасна квартира в центрі</p>
+        <div class="object-price-container">
+          <p class="object-address">вул.Миру</p>
+          <p class="object-price">21 000 грн</p>
+        </div>
+      </div>
+    </div>
+    <div class="object-container">
+      <img src="./img/ap5.jpg" class="object-img" />
+      <div class="object-description-container">
+        <p class="object-label">Оренда сучасної 1-к квартири</p>
+        <div class="object-price-container">
+          <p class="object-address">вул.Перемоги</p>
+          <p class="object-price">10 000 грн</p>
+        </div>
+      </div>
+    </div>
+    <div class="object-container">
+      <img src="./img/ap6.jpg" class="object-img" />
+      <div class="object-description-container">
+        <p class="object-label">Оренда квартири</p>
+        <div class="object-price-container">
+          <p class="object-address">вул.Джерельна</p>
+          <p class="object-price">12 000 грн</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" ng-init="fetch()">
+    <div class="col-md-8 col-md-offset-2">
+      <button href="" class="btn btn-primary" ui-sref="add">
+        <i class="fa fa-plus"></i> Add New
+      </button>
+      <table
+        class="table table-bordered table-striped"
+        style="margin-top: 10px"
+      >
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Address</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="member in members">
+            <td>{{ member.firstname }}</td>
+            <td>{{ member.lastname }}</td>
+            <td>{{ member.address }}</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-success"
+                ui-sref="edit({member: member})"
+              >
+                <i class="fa fa-edit"></i> Edit
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                ui-sref="delete({member: member})"
+              >
+                <i class="fa fa-trash"></i> Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

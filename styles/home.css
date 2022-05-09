@@ -1,0 +1,56 @@
+#banner {
+  width: 100%;
+  height: 450px;
+  text-align: center;
+  color: #ffa8a9;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 70px !important;
+}
+
+.container {
+  background-color: #efebff;
+}
+
+.block-header {
+  color: #542344;
+  font-size: 24px;
+  padding: 2vw;
+}
+
+.objects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.object-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1vw 2vw;
+  width: 30vw;
+}
+
+.object-img {
+  width: 25vw;
+}
+
+.object-description-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+}
+
+.object-price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
