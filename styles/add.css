@@ -1,0 +1,15 @@
+.panel {
+  background-color: transparent !important;
+  border: transparent;
+  width: 70%;
+  margin: auto;
+}
+
+.form-group {
+  display: flex;
+}
+
+.add-form-label {
+  margin-right: 1vw;
+  width: 40%;
+}

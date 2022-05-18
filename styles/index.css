@@ -73,3 +73,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+a:focus {
+  color: #542344;
+}
+
+a:active {
+  color: blue;
+}

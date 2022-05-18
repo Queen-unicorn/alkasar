@@ -54,3 +54,8 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.object-price {
+  color: #542344;
+  font-weight: 800;
+}

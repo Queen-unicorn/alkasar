@@ -42,5 +42,10 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       url: "/contact-us",
       templateUrl: "partials/contact-us.html",
       controller: "contactUsCtrl",
+    })
+    .state("page", {
+      url: "/page",
+      templateUrl: "partials/page.html",
+      controller: "pageCtrl",
     });
 });

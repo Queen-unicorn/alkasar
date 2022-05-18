@@ -1,33 +1,95 @@
-<div class="row">
-  <div class="col-sm-4 col-sm-offset-4">
-    <div class="alert alert-danger text-center" ng-show="error">
-      <button type="button" class="close" ng-click="clear()">
-        <span aria-hidden="true">&times;</span>
-      </button>
-      <i class="fa fa-warning"></i> {{ message }}
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <h3 class="text-center">Add Form</h3>
-        <div class="form-group">
-          <label>Firstname:</label>
-          <input type="text" class="form-control" ng-model="member.firstname" />
-        </div>
-        <div class="form-group">
-          <label>Lastname:</label>
-          <input type="text" class="form-control" ng-model="member.lastname" />
-        </div>
-        <div class="form-group">
-          <label>Address:</label>
-          <input type="text" class="form-control" ng-model="member.address" />
-        </div>
-        <button type="button" class="btn btn-primary" ng-click="add()">
-          <i class="fa fa-save"></i> Save
-        </button>
-        <button type="button" class="btn btn-default pull-right" ui-sref="home">
-          <i class="fa fa-arrow-left"></i> Back
-        </button>
+<div class="row add_block">
+  <div class="alert alert-danger text-center" ng-show="error">
+    <button type="button" class="close" ng-click="clear()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <i class="fa fa-warning"></i> {{ message }}
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h3 class="text-center">Додайте нове оголошення</h3>
+      <div class="form-group">
+        <label class="add-form-label">Заголовок:</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Квартира з сучасним ремонтом в центрі"
+          ng-model="member.firstname"
+        />
       </div>
+      <div class="form-group">
+        <label class="add-form-label">Адреса:</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="вул. Коновальця 34"
+          ng-model="member.lastname"
+        />
+      </div>
+      <div class="form-group">
+        <label class="add-form-label">Ціна, грн:</label>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="10 000"
+          ng-model="member.address"
+        />
+      </div>
+      <div class="form-group">
+        <label class="add-form-label">Площа, м²:</label>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="55"
+          ng-model="member.firstname"
+        />
+      </div>
+      <div class="form-group">
+        <label class="add-form-label">Кількість кімнат:</label>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="2"
+          ng-model="member.lastname"
+        />
+      </div>
+      <div class="form-group">
+        <label class="add-form-label">Поверх:</label>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="1"
+          ng-model="member.firstname"
+        />
+      </div>
+      <div class="form-group">
+        <label class="add-form-label">Ремонт:</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Косметичний"
+          ng-model="member.lastname"
+        />
+      </div>
+      <div class="form-group">
+        <label class="add-form-label">Опис:</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Додайте корисну інформацію про об'єкт для клієнтів"
+          ng-model="member.address"
+        />
+      </div>
+      <div class="form-group">
+        <label class="add-form-label">Прикріпіть фото:</label>
+        <input type="image" class="form-control" ng-model="member.address" />
+      </div>
+      <button type="button" class="btn btn-primary" ng-click="add()">
+        <i class="fa fa-save"></i> Додати
+      </button>
+      <button type="button" class="btn btn-default pull-right" ui-sref="home">
+        <i class="fa fa-arrow-left"></i> Назад
+      </button>
     </div>
   </div>
 </div>
