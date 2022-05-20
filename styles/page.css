@@ -1,0 +1,59 @@
+.page-container {
+  display: flex;
+  flex-direction: row;
+  padding: 3vw;
+}
+
+.page-img-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.page-sub-img-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.page-sub-img {
+  width: 14vw;
+}
+
+.page-main-img {
+  width: 90%;
+  height: fit-content;
+}
+
+.page-container-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-property {
+  display: flex;
+  gap: 1vw;
+}
+
+.page-property-title {
+  font-weight: 800;
+}
+
+.page-description {
+  padding: 0 3vw;
+}
+
+.contact-button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  background-color: #542344;
+  color: #efebff;
+  border: none;
+}
+
+.button-container {
+  width: 100%;
+  text-align: center;
+  padding-top: 1vw;
+}

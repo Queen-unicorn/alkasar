@@ -1,7 +1,7 @@
 .panel {
   background-color: transparent !important;
-  border: transparent;
-  width: 70%;
+  border: none;
+  width: 60%;
   margin: auto;
 }
 

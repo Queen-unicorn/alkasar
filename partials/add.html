@@ -14,7 +14,7 @@
           type="text"
           class="form-control"
           placeholder="Квартира з сучасним ремонтом в центрі"
-          ng-model="member.firstname"
+          ng-model="member.title"
         />
       </div>
       <div class="form-group">
@@ -23,7 +23,7 @@
           type="text"
           class="form-control"
           placeholder="вул. Коновальця 34"
-          ng-model="member.lastname"
+          ng-model="member.address"
         />
       </div>
       <div class="form-group">
@@ -32,7 +32,7 @@
           type="number"
           class="form-control"
           placeholder="10 000"
-          ng-model="member.address"
+          ng-model="member.price"
         />
       </div>
       <div class="form-group">
@@ -41,7 +41,7 @@
           type="number"
           class="form-control"
           placeholder="55"
-          ng-model="member.firstname"
+          ng-model="member.square"
         />
       </div>
       <div class="form-group">
@@ -50,7 +50,7 @@
           type="number"
           class="form-control"
           placeholder="2"
-          ng-model="member.lastname"
+          ng-model="member.rooms"
         />
       </div>
       <div class="form-group">
@@ -59,7 +59,7 @@
           type="number"
           class="form-control"
           placeholder="1"
-          ng-model="member.firstname"
+          ng-model="member.floor"
         />
       </div>
       <div class="form-group">
@@ -68,24 +68,24 @@
           type="text"
           class="form-control"
           placeholder="Косметичний"
-          ng-model="member.lastname"
+          ng-model="member.condition"
         />
       </div>
       <div class="form-group">
         <label class="add-form-label">Опис:</label>
-        <input
+        <textarea
           type="text"
           class="form-control"
           placeholder="Додайте корисну інформацію про об'єкт для клієнтів"
-          ng-model="member.address"
-        />
+          ng-model="member.description"
+        ></textarea>
       </div>
       <div class="form-group">
         <label class="add-form-label">Прикріпіть фото:</label>
-        <input type="image" class="form-control" ng-model="member.address" />
+        <input type="file" class="form-control" ng-model="member.photo" />
       </div>
       <button type="button" class="btn btn-primary" ng-click="add()">
-        <i class="fa fa-save"></i> Додати
+        Додати
       </button>
       <button type="button" class="btn btn-default pull-right" ui-sref="home">
         <i class="fa fa-arrow-left"></i> Назад
